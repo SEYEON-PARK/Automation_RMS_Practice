@@ -429,7 +429,7 @@ each_sheet = {
             'index' : [],
             'change' : []
         }, 
-        '수동임계치' : {
+        '수동 임계치' : {
             'index' : [],
             'change' : []
         }, 
@@ -505,7 +505,7 @@ each_sheet = {
             'index' : [],
             'change' : []
         }, 
-        '수동임계치' : {
+        '수동 임계치' : {
             'index' : [],
             'change' : []
         }, 
@@ -814,7 +814,87 @@ each_sheet = {
             'change' : []
         }
     },
-    'SSS (TCP)' : { # 하기!
+    'SSS (TCP)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '비연결 패킷 차단' : {
+            'index' : [],
+            'change' : []
+        },
+        '프로토콜' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '포트' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'cps 임계치' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '임시 등록 시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '인증 유지 시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '학습모드' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '예외 포트 사용' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '예외 포트' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비연결 패킷 허용 임계치' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Syn-Cookie 임계치' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '임계치학습' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'SSS (UDP)' : {
         # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
         # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
         '공격코드' : {
@@ -833,7 +913,7 @@ each_sheet = {
             'index' : [],
             'change' : []
         }, 
-        '임계치' : {
+        '포트' : {
             'index' : [],
             'change' : []
         }, 
@@ -849,10 +929,741 @@ each_sheet = {
             'index' : [],
             'change' : []
         }, 
+        '학습모드' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '예외 포트 사용' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '예외 포트' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비인증 차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '인증 유지 시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '인증 QoS' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'cps 임계치' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '임계치학습' : {
+            'index' : [],
+            'change' : []
+        }, 
         '비고' : {
             'index' : [],
             'change' : []
         }
+    },
+    '예외Key' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '예외키' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    '패턴블럭(배포룰)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '차단방법' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '프로토콜' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '포트' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Flow' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '임계치학습' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    '패턴블럭(사용자정의)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '차단방법' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '프로토콜' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '포트' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Flow' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '패턴' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '유형' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대소문자 비교' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '옵셋값' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '옵셋비교' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '임계치학습' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'WebCGI 공격(배포룰)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '차단방법' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'WebCGI 공격(사용자정의)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '차단방법' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '패턴' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '유형' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대소문자 비교' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'RegEx(배포룰)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'RegEx(사용자정의)' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '공격명' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '행위' : {
+            'index' : [],
+            'change' : []
+        },
+        '위험도' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '경보' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '메일' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Inbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Outbound' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Trusted IP' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RAW' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'RegEx패턴' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정횟수' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격인정시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '차단시간' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자축약' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '공격자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '대상자 축약(IPv6)' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    '예외IP' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '항목' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '프로토콜' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'IP버전' : {
+            'index' : [],
+            'change' : []
+        },
+        'Source Network' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Source Prefix' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Source Port' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Destination Network' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Destination Prefix' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Destination Port' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    'DDos 예외IP' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '항목' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '공격코드' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        'IP버전' : {
+            'index' : [],
+            'change' : []
+        },
+        'Source Network' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Source Prefix' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Destination Network' : {
+            'index' : [],
+            'change' : []
+        }, 
+        'Destination Prefix' : {
+            'index' : [],
+            'change' : []
+        }, 
+        '비고' : {
+            'index' : [],
+            'change' : []
+        }
+    },
+    '정책템플릿' : {
+        # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
+        # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
+        '템플릿ID' : {
+            'index' : [2, 3],
+            'change' : ['', '수정한 부분1']
+        },
+        '템플릿명' : {
+            'index' : [3, 4],
+            'change' : [3, ' qmffdkfjdk']
+        }, 
+        '방향' : {
+            'index' : [],
+            'change' : []
+        }
     }
-    
 }
