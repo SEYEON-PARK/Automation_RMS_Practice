@@ -103,16 +103,16 @@ file_path = 'F:/detect-policy.xlsx'  # 엑셀 파일 경로
 wb = openpyxl.load_workbook(file_path)
 cell_colors = ["FFFF80", "F9D28B", "BBEBBC"] # 바꾼 부분 표시할 바탕 색깔(각각 유효성 에러, 중복 에러, 정상 파일에 대한 색깔이다.)
 file_names = ["유효성 에러 파일", "중복 에러 파일", "정상 파일"]
-index_key = ['B', 'B', 'A', 'B', 'A', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B', 'B', 'C', 'C', 'A'] # txt 파일 출력을 위해 있는 변수, 각 시트의 순서대로 인덱스 키로 나올 만한 부분을 저장한다.
-len(index_key)
+# index_key = ['B', 'B', 'A', 'B', 'A', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B', 'B', 'C', 'C', 'A'] # txt 파일 출력을 위해 있는 변수, 각 시트의 순서대로 인덱스 키로 나올 만한 부분을 저장한다.
+# len(index_key)
 
 for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.items()):
     # 파일 이름
-    txt_file_name = f"F:/{file_names[file_index]}.txt"
+    # txt_file_name = f"F:/{file_names[file_index]}.txt"
     # txt 파일 열기
-    txt_file = open(txt_file_name, 'w', encoding='utf-8-sig')
+    # txt_file = open(txt_file_name, 'w', encoding='utf-8-sig')
     for sheet_index, (sheet_name, value) in enumerate(kind_of_attack_list.items()):
-        txt_file.write(f'{sheet_name}\n')
+        # txt_file.write(f'{sheet_name}\n')
         if sheet_name in wb.sheetnames: # 해당 시트 이름이 엑셀 파일에 있을 경우
             sheet = wb[sheet_name]  # 시트 이름 또는 인덱스로 시트 선택
         else: # 없다면
@@ -177,12 +177,12 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
                         
                         # 파일에 쓰기
                         # txt_file.write(f'인덱스 키 : {sheet[f'{index_key[sheet_index]}{each_sheet[kind_of_attack][sheet_name][column_name]['index'][i]}'].value}\n')  # 각 줄 뒤에 줄바꿈 문자 추가
-                        txt_file.write(f'인덱스 키 : {sheet[f'{index_key[sheet_index]}{each_sheet[kind_of_attack][sheet_name][column_name]['index'][i]}'].value}, 에러 메시지 : {each_sheet[kind_of_attack][sheet_name][column_name]['error_message'][i]}\n')  # 각 줄 뒤에 줄바꿈 문자 추가      
+                        # txt_file.write(f'인덱스 키 : {sheet[f'{index_key[sheet_index]}{each_sheet[kind_of_attack][sheet_name][column_name]['index'][i]}'].value}, 에러 메시지 : {each_sheet[kind_of_attack][sheet_name][column_name]['error_message'][i]}\n')  # 각 줄 뒤에 줄바꿈 문자 추가      
                     break
             else: # break에 걸리지 않으면 실행됨.(즉, count열부터 1행 끝열(데이터가 있는 가장 마지막 열)까지 해당 요소가 없으면)
                 print(f"\n'{column_name}'이 포함된 열을 찾을 수 없습니다.")
         
-        txt_file.write('\n')
+        # txt_file.write('\n')
 
 
     # 엑셀 파일 저장
@@ -191,7 +191,7 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
     # 다른 이름으로 저장하기
     new_file_path = f'F:/{file_names[file_index]}.xlsx'  # 새 파일 이름(원하는 경로로 지정)
     wb.save(new_file_path)  # 수정된 내용을 다른 이름으로 저장
-    txt_file.close()
+    # txt_file.close()
 
 '''
 import openpyxl

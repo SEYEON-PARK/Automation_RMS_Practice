@@ -24,113 +24,91 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [2, 3],
-                'change' : [65534, '문자열'],
-                'error_message' : ['"notExistTemplate", "template vId 65534 is not exist"', "문자열 에러(넘버여야만 함.)"]
+                'change' : [65534, '문자열']
             },
             '공격코드' : {
                 'index' : [4],
-                'change' : [None],
-                'error_message' : ['"isRequire": "code is required."']
+                'change' : [None]
             }, 
             '공격명' : {
                 'index' : [5],
-                'change' : ['great'],
-                'error_message' : [	'"uneditable": "name is uneditable."']
+                'change' : ['great']
             }, 
             '행위' : {
                 'index' : [6],
-                'change' : [3],
-                'error_message' : ['"isEnum": "action must be a valid enum value."']
+                'change' : [3]
             },
             '차단방법' : {
                 'index' : [7],
-                'change' : ["문자열 수정"],
-                'error_message' : ['"isEnum": "action must be a valid enum value."']
+                'change' : ["문자열 수정"]
             }, 
             '위험도' : {
                 'index' : [8],
-                'change' : [1],
-                'error_message' : ['"isEnum": "risk must be a valid enum value."']
+                'change' : [1]
             }, 
             '경보' : {
                 'index' : [9],
-                'change' : ['아무거나'],
-                'error_message' : ['"type": "alert must be BOOLEAN."']
+                'change' : ['아무거나']
             }, 
             '메일' : {
                 'index' : [10],
-                'change' : ['아무거나'],
-                'error_message' : ['"type": "alert must be BOOLEAN."']
+                'change' : ['아무거나']
             }, 
             'Inbound' : {
                 'index' : [11, 14, 15],
-                'change' : ['아무거나', 'true', None, None],
-                'error_message' : ['"isEnum": "risk must be a valid enum value."', '"relations": "outbound,trusted is required", "nullable":"outbound is not allow null."', '', '']
+                'change' : ['아무거나', 'true', None, None]
             }, 
             'Outbound' : {
                 'index' : [12, 14, 15],
-                'change' : ['아무거나', None, 'true', None],
-                'error_message' : ['"isEnum": "risk must be a valid enum value."', '', '"relations": "outbound,trusted is required", "nullable":"outbound is not allow null."', '']
+                'change' : ['아무거나', None, 'true', None]
             }, 
             'Trusted IP' : {
                 'index' : [13, 14, 15],
-                'change' : ['아무거나', None, None, 'true'],
-                'error_message' : ['"isEnum": "risk must be a valid enum value."', '', '', '"relations": "outbound,trusted is required", "nullable":"outbound is not allow null."']
+                'change' : ['아무거나', None, None, 'true']
             }, 
             'RAW' : {
                 'index' : [15],
-                'change' : [2],
-                'error_message' : ['"isEnum": "raw must be a valid enum value."']
+                'change' : [2]
             }, 
             '공격인정횟수' : {
                 'index' : [16, 17],
-                'change' : [0, 10000001],
-                'error_message' : ['"min": "nlimit must equal or greater than 1."', '"max": "nlimit must equal or less than 10000000."']
+                'change' : [0, 10000001]
             }, 
             '차단인정횟수' : {
                 'index' : [18, 19],
-                'change' : [0, 10000001],
-                'error_message' : ['"min": "nlimit must equal or greater than 1."', '"max": "nlimit must equal or less than 10000000."']
+                'change' : [0, 10000001]
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정보수집' : {
@@ -150,98 +128,79 @@ each_sheet = {
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '프로토콜취약점' : {
@@ -249,108 +208,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '서비스공격' : {
@@ -358,118 +296,95 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '오버플로우' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(프로토콜)' : {
@@ -477,88 +392,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(서비스)' : {
@@ -566,93 +464,75 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'MMM' : {
@@ -660,78 +540,63 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '우선순위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '레이어' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Length Control' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패킷헤더' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '마스크' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Builder' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DNS 차단' : {
@@ -739,133 +604,107 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'DNS 타입' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Ascii)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Hexa)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'Ratelimit(Dynamic)' : {
@@ -873,88 +712,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RateLimit방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 패턴추출' : {
@@ -962,48 +784,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (TCP)' : {
@@ -1011,98 +824,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '비연결 패킷 차단' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임시 등록 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비연결 패킷 허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Syn-Cookie 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (UDP)' : {
@@ -1110,88 +904,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '비인증 차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 QoS' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외Key' : {
@@ -1199,13 +976,11 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외키' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(배포룰)' : {
@@ -1213,128 +988,103 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(사용자정의)' : {
@@ -1342,153 +1092,123 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(배포룰)' : {
@@ -1496,108 +1216,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(사용자정의)' : {
@@ -1605,123 +1304,99 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(배포룰)' : {
@@ -1729,98 +1404,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(사용자정의)' : {
@@ -1828,103 +1484,83 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RegEx패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외IP' : {
@@ -1932,63 +1568,51 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 예외IP' : {
@@ -1996,48 +1620,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정책템플릿' : {
@@ -2045,18 +1660,15 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         }
     },
@@ -2066,113 +1678,91 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정보수집' : {
@@ -2180,113 +1770,91 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '프로토콜취약점' : {
@@ -2294,108 +1862,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '서비스공격' : {
@@ -2403,118 +1950,95 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '오버플로우' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(프로토콜)' : {
@@ -2522,88 +2046,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(서비스)' : {
@@ -2611,93 +2118,75 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'MMM' : {
@@ -2705,78 +2194,63 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '우선순위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '레이어' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Length Control' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패킷헤더' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '마스크' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Builder' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DNS 차단' : {
@@ -2784,133 +2258,107 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'DNS 타입' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Ascii)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Hexa)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'Ratelimit(Dynamic)' : {
@@ -2918,88 +2366,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RateLimit방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 패턴추출' : {
@@ -3007,48 +2438,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (TCP)' : {
@@ -3056,98 +2478,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '비연결 패킷 차단' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임시 등록 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비연결 패킷 허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Syn-Cookie 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (UDP)' : {
@@ -3155,88 +2558,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비인증 차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 QoS' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외Key' : {
@@ -3244,13 +2630,11 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외키' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(배포룰)' : {
@@ -3258,128 +2642,103 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(사용자정의)' : {
@@ -3387,153 +2746,123 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(배포룰)' : {
@@ -3541,108 +2870,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(사용자정의)' : {
@@ -3650,123 +2958,99 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(배포룰)' : {
@@ -3774,98 +3058,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(사용자정의)' : {
@@ -3873,103 +3138,83 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RegEx패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외IP' : {
@@ -3977,63 +3222,51 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 예외IP' : {
@@ -4041,48 +3274,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정책템플릿' : {
@@ -4090,18 +3314,15 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         }
     },
@@ -4111,113 +3332,91 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정보수집' : {
@@ -4225,113 +3424,91 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '프로토콜취약점' : {
@@ -4339,108 +3516,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '서비스공격' : {
@@ -4448,118 +3604,95 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '오버플로우' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(프로토콜)' : {
@@ -4567,88 +3700,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '통계분석(서비스)' : {
@@ -4656,93 +3772,75 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '탐지방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '단위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '수동 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최소)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(평균)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '자동 임계치(최대)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'MMM' : {
@@ -4750,78 +3848,63 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '우선순위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '레이어' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Length Control' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패킷헤더' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '마스크' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Builder' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DNS 차단' : {
@@ -4829,133 +3912,107 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'DNS 타입' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Ascii)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'URL (Hexa)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'Ratelimit(Dynamic)' : {
@@ -4963,88 +4020,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RateLimit방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 패턴추출' : {
@@ -5052,48 +4092,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (TCP)' : {
@@ -5101,98 +4132,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '비연결 패킷 차단' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임시 등록 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비연결 패킷 허용 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Syn-Cookie 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'SSS (UDP)' : {
@@ -5200,88 +4212,71 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '학습모드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트 사용' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외 포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비인증 차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 유지 시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '인증 QoS' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'cps 임계치' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외Key' : {
@@ -5289,13 +4284,11 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '예외키' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(배포룰)' : {
@@ -5303,128 +4296,103 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '패턴블럭(사용자정의)' : {
@@ -5432,153 +4400,123 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '포트' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Flow' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋값' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '옵셋비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '임계치학습' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(배포룰)' : {
@@ -5586,108 +4524,87 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'WebCGI 공격(사용자정의)' : {
@@ -5695,123 +4612,99 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '차단방법' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '유형' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대소문자 비교' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(배포룰)' : {
@@ -5819,98 +4712,79 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'RegEx(사용자정의)' : {
@@ -5918,103 +4792,83 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '행위' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '위험도' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '경보' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '메일' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Inbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Outbound' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Trusted IP' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RAW' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'RegEx패턴' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정횟수' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '차단시간' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자축약' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '공격자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '대상자 축약(IPv6)' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '예외IP' : {
@@ -6022,63 +4876,51 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '프로토콜' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Port' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         'DDos 예외IP' : {
@@ -6086,48 +4928,39 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '항목' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '공격코드' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'IP버전' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             'Source Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Source Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Network' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             'Destination Prefix' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '비고' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         },
         '정책템플릿' : {
@@ -6135,18 +4968,15 @@ each_sheet = {
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             },
             '템플릿명' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }, 
             '방향' : {
                 'index' : [],
-                'change' : [],
-                'error_message' : []
+                'change' : []
             }
         }
     }
