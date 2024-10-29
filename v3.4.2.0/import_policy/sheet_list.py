@@ -1,15 +1,11 @@
 '''
 이 코드는 엑셀 파일에 들어가야 하는 시트와 컬럼들을 정리해둔 코드입니다.
-각 컬럼들에는 [] 시, 에러가 나도록 만드는 항목만 들어가 있습니다.
+각 컬럼들에는 [정책 Import] 시, 에러가 나도록 만드는 항목만 들어가 있습니다.
 (유효성/중복 나눌지 고민 필요함.)
 
 엑셀 파일 Export하여 참고한 ONE 버전 : v3.1.2
-해당 버전이 아닌 다른 버전에서 [] 시, 수정해야 하는 값이 있을 수 있음.
+해당 버전이 아닌 다른 버전에서 [정책 Import] 시, 수정해야 하는 값이 있을 수 있음.
 Ex) v3.1.2에서는 '공격인정횟수'가 40부터여야 하는데 다른 버전에서는 '공격인정횟수'가 20부터여도 되는 경우도 있음.
-
-전제 조건)
-템플릿ID가 65534는 없다.
-템플릿ID가 1은 있다.
 '''
 # 엑셀 시트 이름
 sheet_name = ['서비스거부', '정보수집', '프로토콜취약점', '서비스공격', '통계분석(프로토콜)', '통계분석(서비스)', 'MMM', 'DNS 차단', 'Ratelimit(Dynamic)', 'DDos 패턴추출', \
@@ -23,60 +19,60 @@ each_sheet = {
             # 만약, 엑셀 시트 행의 순서가 바뀐다면 이 부분도 바꿔줘야 한다.
             # 각 'index' 요소 1개가 'change' 요소 1개로 매칭되어야 한다. 
             '템플릿ID' : {
-                'index' : [2, 3],
-                'change' : [65534, '문자열']
+                'index' : [],
+                'change' : []
             },
             '공격코드' : {
-                'index' : [4],
-                'change' : [None]
+                'index' : [],
+                'change' : []
             }, 
             '공격명' : {
-                'index' : [5],
-                'change' : ['great']
+                'index' : [],
+                'change' : []
             }, 
             '행위' : {
-                'index' : [6],
-                'change' : [3]
+                'index' : [],
+                'change' : []
             },
             '차단방법' : {
-                'index' : [7],
-                'change' : ["문자열 수정"]
+                'index' : [],
+                'change' : []
             }, 
             '위험도' : {
-                'index' : [8],
-                'change' : [1]
+                'index' : [],
+                'change' : []
             }, 
             '경보' : {
-                'index' : [9],
-                'change' : ['아무거나']
+                'index' : [],
+                'change' : []
             }, 
             '메일' : {
-                'index' : [10],
-                'change' : ['아무거나']
+                'index' : [],
+                'change' : []
             }, 
             'Inbound' : {
-                'index' : [11, 14, 15],
-                'change' : ['아무거나', 'true', None, None]
+                'index' : [],
+                'change' : []
             }, 
             'Outbound' : {
-                'index' : [12, 14, 15],
-                'change' : ['아무거나', None, 'true', None]
+                'index' : [],
+                'change' : []
             }, 
             'Trusted IP' : {
-                'index' : [13, 14, 15],
-                'change' : ['아무거나', None, None, 'true']
+                'index' : [],
+                'change' : []
             }, 
             'RAW' : {
-                'index' : [15],
-                'change' : [2]
+                'index' : [],
+                'change' : []
             }, 
             '공격인정횟수' : {
-                'index' : [16, 17],
-                'change' : [0, 10000001]
+                'index' : [],
+                'change' : []
             }, 
             '차단인정횟수' : {
-                'index' : [18, 19],
-                'change' : [0, 10000001]
+                'index' : [],
+                'change' : []
             }, 
             '공격인정시간' : {
                 'index' : [],
@@ -4981,3 +4977,9 @@ each_sheet = {
         }
     }
 }
+
+'''
+# 엑셀 표에 정리하기 편하게끔 출력하기
+for name in sheet_name:
+    print(name, len(list(each_sheet['유효성 에러'][name].keys())), '\n', ', '.join(each_sheet['유효성 에러'][name].keys()), '\n')
+'''
