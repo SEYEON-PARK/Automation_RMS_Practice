@@ -8,9 +8,14 @@
 Ex) v3.1.2에서는 '공격인정횟수'가 40부터여야 하는데 다른 버전에서는 '공격인정횟수'가 20부터여도 되는 경우도 있음.
 '''
 # 엑셀 시트 이름
-sheet_name = ['서비스거부', '정보수집', '프로토콜취약점', '서비스공격', '통계분석(프로토콜)', '통계분석(서비스)', 'MMM', 'DNS 차단', 'Ratelimit(Dynamic)', 'DDos 패턴추출', \
+sheet_names = ['서비스거부', '정보수집', '프로토콜취약점', '서비스공격', '통계분석(프로토콜)', '통계분석(서비스)', 'MMM', 'DNS 차단', 'Ratelimit(Dynamic)', 'DDos 패턴추출', \
               'SSS (TCP)', 'SSS (UDP)', '예외Key', '패턴블럭(배포룰)', '패턴블럭(사용자정의)', 'WebCGI 공격(배포룰)', 'WebCGI 공격(사용자정의)', 'RegEx(배포룰)', 'RegEx(사용자정의)', \
               '예외IP', 'DDos 예외IP', '정책템플릿']
+
+# 내보낼 엑셀 시트 이름(시간복잡도 문제로 집합으로 만들었다.)
+export_sheet_names = {'서비스거부', '정보수집', '프로토콜취약점', '서비스공격', '통계분석(프로토콜)', '통계분석(서비스)', 'MMM', 'DNS 차단', 'Ratelimit(Dynamic)', 'DDos 패턴추출', \
+                    'SSS (TCP)', 'SSS (UDP)', '예외Key', '패턴블럭(배포룰)', '패턴블럭(사용자정의)', 'WebCGI 공격(배포룰)', 'WebCGI 공격(사용자정의)', 'RegEx(배포룰)', 'RegEx(사용자정의)', \
+                    '예외IP', 'DDos 예외IP', '정책템플릿'}
 
 # 각 엑셀 시트에 있는 컬럼들
 each_sheet = {
@@ -4980,6 +4985,6 @@ each_sheet = {
 
 '''
 # 엑셀 표에 정리하기 편하게끔 출력하기
-for name in sheet_name:
+for name in sheet_names:
     print(name, len(list(each_sheet['유효성 에러'][name].keys())), '\n', ', '.join(each_sheet['유효성 에러'][name].keys()), '\n')
 '''
