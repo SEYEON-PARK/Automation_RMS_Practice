@@ -180,12 +180,12 @@ for kind_of_accack_sheet in error_wb.sheetnames:
             print("최대 행을 초과했습니다. 루프를 종료합니다.")
             break
         
-# print(each_sheet)
+print(each_sheet)
     
 
 # RMS에서 [정책 Export]한 엑셀 파일 불러오기
 # file_path = 'F:/detect-policy.xlsx'  # 엑셀 파일 경로
-file_path = 'F:/v3.3.1.xlsx'  # 엑셀 파일 경로
+file_path = 'F:/v3.0.5.xlsx'  # 엑셀 파일 경로
 cell_colors = ["FFFF80", "F9D28B", "BBEBBC"] # 바꾼 부분 표시할 바탕 색깔(각각 유효성 에러, 중복 에러, 정상 파일에 대한 색깔이다.)
 file_names = ["유효성 에러 파일", "중복 에러 파일", "정상 파일"]
 # index_key = ['B', 'B', 'A', 'B', 'A', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B', 'B', 'C', 'C', 'A'] # txt 파일 출력을 위해 있는 변수, 각 시트의 순서대로 인덱스 키로 나올 만한 부분을 저장한다.
@@ -223,11 +223,15 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
                 header = col[0].value
                 # print(header, end=" ")
                 
+                ''' 파일 다시 열고 저장시키니 문제 발생 안 한다! 없어도 될 듯 ><
                 # SSS(TCP), SSS(UDP)의 '예외 포트'는 비어있을 수 없음.
                 if header == '예외 포트':
                     column_letter = get_column_letter(col[0].column)
-                    for i in range(2, 8):
+                    i = 2
+                    while(sheet[f'{column_letter}{i}'].value is not None) : # 조건 부분 조금 수정할 필요 있어보임.
                         sheet[f'{column_letter}{i}'] = ''
+                        i += 1
+                '''
                 
                 if header and column_name in str(header):  # 헤더가 '공격명'을 포함하는지 확인
                     # print(f"'공격명'이 포함된 열 번호: {col[0].column}")  # 열 번호 출력
@@ -276,10 +280,14 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
 
     # 엑셀 파일 저장
     # wb.save(file_path)
-
     # 다른 이름으로 저장하기
     new_file_path = f'F:/{file_names[file_index]}.xlsx'  # 새 파일 이름(원하는 경로로 지정)
     wb.save(new_file_path)  # 수정된 내용을 다른 이름으로 저장
+    
+    # 다시 열었다가 저장(이렇게 안 하면 RMS에서 오류가 나는 경우 꽤 있음.)
+    wb = openpyxl.load_workbook(new_file_path)
+    wb.save(new_file_path)
+    # wb.close()
     # txt_file.close()
 
 '''
