@@ -7,7 +7,7 @@ http://175.113.83.14/issues/132408
 만약, 더 추가해야 하는 부분이 있다면 댓글로 알려주시면 감사하겠습니다.
 
 ※ 에러 정리해둔 엑셀 파일 작성 시, 주의 사항
-- 정책 이름, 'Finish', 'All Finish'는 사용 불가
+- 정책 이름, 'Pass', 'Finish', 'All Finish'는 사용 불가
 '''
 """
 import shutil
@@ -102,7 +102,7 @@ from openpyxl.styles import PatternFill, Font, Border, Side
 from sheet_list import export_sheet_names, each_sheet
 
 # 오류 사항 저장해둔 엑셀 파일 불러오기
-error_file_path = 'F:/정책 Import_Export.xlsx'
+error_file_path = 'F:/정책 Import_Export_v3.1.2 (1).xlsx'
 error_wb = openpyxl.load_workbook(error_file_path)
 
 # 특정 행의 마지막 열을 찾는 함수
@@ -160,7 +160,7 @@ for kind_of_accack_sheet in error_wb.sheetnames:
                     index += 1  # 인덱스 증가
                     each_value_row += 1  # 다음 행으로 이동
                     
-                    ''' 이렇게 하면 기준 row가 계속 바껴서 안 된다. 주석 처리!
+                    ''' 이렇게 하면 기준 row가 계속 바뀌어서 안 된다. 주석 처리!
                     # 다음 검사할 행은 현재 정책 항목이 끝난 후에 있음.
                     if each_value_row > row:  # 각 정책이 시작되는 행을 넘어간 경우
                         row = each_value_row  # 현재 행 업데이트
@@ -180,18 +180,19 @@ for kind_of_accack_sheet in error_wb.sheetnames:
             print("최대 행을 초과했습니다. 루프를 종료합니다.")
             break
         
-print(each_sheet)
+# print(each_sheet)
     
-''' 이 부분이 최종 보던 코드!
+
 # RMS에서 [정책 Export]한 엑셀 파일 불러오기
-file_path = 'F:/detect-policy.xlsx'  # 엑셀 파일 경로
-wb = openpyxl.load_workbook(file_path)
+# file_path = 'F:/detect-policy.xlsx'  # 엑셀 파일 경로
+file_path = 'F:/v3.3.1.xlsx'  # 엑셀 파일 경로
 cell_colors = ["FFFF80", "F9D28B", "BBEBBC"] # 바꾼 부분 표시할 바탕 색깔(각각 유효성 에러, 중복 에러, 정상 파일에 대한 색깔이다.)
 file_names = ["유효성 에러 파일", "중복 에러 파일", "정상 파일"]
 # index_key = ['B', 'B', 'A', 'B', 'A', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B', 'B', 'C', 'C', 'A'] # txt 파일 출력을 위해 있는 변수, 각 시트의 순서대로 인덱스 키로 나올 만한 부분을 저장한다.
 # len(index_key)
 
 for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.items()):
+    wb = openpyxl.load_workbook(file_path) # for문 안에서 새로 열지 않으면 이전 수정했던 파일 위에 더 수정하는 상황이 된다.
     # 파일 이름
     # txt_file_name = f"F:/{file_names[file_index]}.txt"
     # txt 파일 열기
@@ -204,7 +205,8 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
             continue # 그 다음 이어서 시작
         
         print(sheet_name)
-        print(len(each_sheet[kind_of_attack][sheet_name]))
+        # print(len(each_sheet[kind_of_attack][sheet_name]))
+        
         # print("시트 열 길이 : ", sheet.max_column)
         # 공격명 바꿀 행 번호
         # attack_name_index = [2, 3]
@@ -237,6 +239,8 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
                     
                     # print(column_letter)
                     for i in range(len(each_sheet[kind_of_attack][sheet_name][column_name]['index'])):
+                        if each_sheet[kind_of_attack][sheet_name][column_name]['change'][i] == 'Pass':
+                            continue
                         # 셀 값 변경
                         sheet[f'{column_letter}{each_sheet[kind_of_attack][sheet_name][column_name]['index'][i]}'] = each_sheet[kind_of_attack][sheet_name][column_name]['change'][i]
                         
@@ -277,7 +281,6 @@ for file_index, (kind_of_attack, kind_of_attack_list) in enumerate(each_sheet.it
     new_file_path = f'F:/{file_names[file_index]}.xlsx'  # 새 파일 이름(원하는 경로로 지정)
     wb.save(new_file_path)  # 수정된 내용을 다른 이름으로 저장
     # txt_file.close()
-'''
 
 '''
 import openpyxl
