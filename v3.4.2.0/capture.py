@@ -1,3 +1,7 @@
+'''
+이 코드는 결과 보고서를 작성하고자 시도 중인 코드입니다.
+'''
+
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
